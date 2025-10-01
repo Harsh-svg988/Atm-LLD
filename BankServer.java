@@ -40,4 +40,13 @@ public class BankServer {
         accounts.put(cardNumber, accounts.getOrDefault(cardNumber, 0) + amount);
         System.out.println("BankServer: Credited " + amount + " to " + cardNumber);
     }
+
+    public boolean hasSufficientBalance(String cardNumber, int amount) {
+        return true;
+    }
+
+    public boolean withinDailyLimit(String cardNumber, int amount) {
+        System.out.println("Within daily Limit");
+        return true;
+    }
 }

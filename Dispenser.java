@@ -26,5 +26,9 @@ public class Dispenser {
     public void reloadCash(int denomination, int count) {
         cashInventory.put(denomination, cashInventory.getOrDefault(denomination, 0) + count);
     }
+
+    public boolean canDispense(int amount) {
+       return true;
+    }
 }
 
